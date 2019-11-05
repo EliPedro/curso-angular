@@ -5,12 +5,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DiretitvaNgifComponent } from './diretitva-ngif/diretitva-ngif.component';
 import { DiretitvaNgswitchComponent } from './diretitva-ngswitch/diretitva-ngswitch.component';
+import { DiretivaNgforComponent } from './diretiva-ngfor/diretiva-ngfor.component';
+import { DiretivaNgClassComponent } from './diretiva-ng-class/diretiva-ng-class.component';
+import { DiretivaNgStyleComponent } from './diretiva-ng-style/diretiva-ng-style.component';
+import { OperadorElvisComponent } from './operador-elvis/operador-elvis.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DiretitvaNgifComponent,
-    DiretitvaNgswitchComponent
+    DiretitvaNgswitchComponent,
+    DiretivaNgforComponent,
+    DiretivaNgClassComponent,
+    DiretivaNgStyleComponent,
+    OperadorElvisComponent
   ],
   imports: [
     BrowserModule,

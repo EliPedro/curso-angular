@@ -31,3 +31,18 @@
       <p>Home</p>
     </ng-template>
   </div>
+
+
+  
+  <div class="container" [ngSwitch]="aba"  >
+  
+    <ng-template [ngSwitchCase]="'mapa'">
+      <p>Modo Mapa ativado</p>
+    </ng-template>
+   
+    <ng-template [ngSwitchCase]="'home'" ngSwitchDefault>
+      <p>Home</p>
+    </ng-template>  
+  </div>
+  
+  
