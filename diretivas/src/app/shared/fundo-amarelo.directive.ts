@@ -1,10 +1,17 @@
-import { Directive } from '@angular/core';
+import { element } from 'protractor';
+import { Directive, ElementRef, Renderer } from '@angular/core';
 
 @Directive({
-  selector: '[appFundoAmarelo]'
+  selector: 'p[appFundoAmarelo]'
 })
 export class FundoAmareloDirective {
 
-  constructor() { }
-
+  constructor(private _elementRef: ElementRef, private _renderer:Renderer) 
+  {
+    //  _elementRef.nativeElement.style.backgroundColor ='yellow';
+      this._renderer
+      .setElementStyle(this._elementRef.nativeElement,
+        'backgroundColor'
+        ,'yellow')
+   }
 }
