@@ -1,5 +1,5 @@
-import { CursosService } from './../../../../primeiro-projeto/src/app/cursos/cursos.service';
-import { Component, OnInit, Injectable } from '@angular/core';
+import { CursosService } from './cursos.service'
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-cursos',
@@ -11,11 +11,10 @@ export class CursosComponent implements OnInit {
 
   cursos:string [] = [];
 
-  constructor(private cursosService: CursosService) { }
+  constructor(private _cursosService: CursosService) { }
 
   ngOnInit() 
   {
-    this.cursos = this.cursosService.getCursos();
-  }
-
+    this.cursos = this._cursosService.getCursos();
+  }   
 }

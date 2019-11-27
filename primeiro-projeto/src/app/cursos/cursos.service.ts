@@ -1,15 +1,11 @@
 import { Injectable } from '@angular/core';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class CursosService {
 
-  // http 
   constructor() { }
 
-  getCursos()
-  {
-    return ['Java','C#','Angular','PHP'];
+  getCursos(){
+    return ['Java', 'Ext JS', 'Angular'];
   }
 }

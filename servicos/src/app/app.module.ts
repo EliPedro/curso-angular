@@ -1,4 +1,4 @@
-import { CursosService } from './../../../primeiro-projeto/src/app/cursos/cursos.service';
+import { CursosService } from './cursos/cursos.service'
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -15,10 +15,7 @@ import { CursosComponent } from './cursos/cursos.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [
-
-    CursosService
-  ],
+  providers: [CursosService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
